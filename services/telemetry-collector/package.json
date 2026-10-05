@@ -1,0 +1,23 @@
+{
+  "name": "telemetry-collector",
+  "version": "1.0.0",
+  "description": "AutoTrace-Sec out-of-band telemetry interception and streaming collector",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/collector.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.3",
+    "kafkajs": "^2.2.4",
+    "uuid": "^11.1.0"
+  },
+  "overrides": {
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
